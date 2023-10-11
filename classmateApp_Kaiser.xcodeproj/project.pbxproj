@@ -17,6 +17,7 @@
 		3BE35A792AD6E4EA005ACA77 /* classmateApp_KaiserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE35A782AD6E4EA005ACA77 /* classmateApp_KaiserTests.swift */; };
 		3BE35A832AD6E4EA005ACA77 /* classmateApp_KaiserUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE35A822AD6E4EA005ACA77 /* classmateApp_KaiserUITests.swift */; };
 		3BE35A852AD6E4EA005ACA77 /* classmateApp_KaiserUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE35A842AD6E4EA005ACA77 /* classmateApp_KaiserUITestsLaunchTests.swift */; };
+		3BE35A922AD6E5EA005ACA77 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE35A912AD6E5EA005ACA77 /* Student.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		3BE35A7E2AD6E4EA005ACA77 /* classmateApp_KaiserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = classmateApp_KaiserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE35A822AD6E4EA005ACA77 /* classmateApp_KaiserUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classmateApp_KaiserUITests.swift; sourceTree = "<group>"; };
 		3BE35A842AD6E4EA005ACA77 /* classmateApp_KaiserUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = classmateApp_KaiserUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3BE35A912AD6E5EA005ACA77 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				3BE35A602AD6E4E9005ACA77 /* SceneDelegate.swift */,
 				3BE35A622AD6E4E9005ACA77 /* ViewController.swift */,
 				3BE35A642AD6E4E9005ACA77 /* Main.storyboard */,
+				3BE35A912AD6E5EA005ACA77 /* Student.swift */,
 				3BE35A6A2AD6E4EA005ACA77 /* Assets.xcassets */,
 				3BE35A6C2AD6E4EA005ACA77 /* LaunchScreen.storyboard */,
 				3BE35A6F2AD6E4EA005ACA77 /* Info.plist */,
@@ -264,6 +267,7 @@
 				3BE35A692AD6E4E9005ACA77 /* classmateApp_Kaiser.xcdatamodeld in Sources */,
 				3BE35A632AD6E4E9005ACA77 /* ViewController.swift in Sources */,
 				3BE35A5F2AD6E4E9005ACA77 /* AppDelegate.swift in Sources */,
+				3BE35A922AD6E5EA005ACA77 /* Student.swift in Sources */,
 				3BE35A612AD6E4E9005ACA77 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
