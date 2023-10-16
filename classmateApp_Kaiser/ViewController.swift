@@ -5,6 +5,10 @@
 //  Created by ANDREW KAISER on 10/11/23.
 //
 
+protocol addingStudentProto {
+    func addStudent(_ stuName: String, _ stuAge: Int, _ stuMoney: Double)
+}
+
 import UIKit
 
 class ViewController: UIViewController {
@@ -32,18 +36,18 @@ class ViewController: UIViewController {
         stuArray.append(s3)
 
         
-        nameOutlet.text = s1.name
-        ageOutlet.text = String(s1.age)
-        moneyOutlet.text = String(s1.money)
+        nameOutlet.text = "Name: \(s1.name)"
+        ageOutlet.text = "Age: \(String(s1.age))"
+        moneyOutlet.text = "Money: \(String(s1.money))"
     }
     @IBAction func nextActioon(_ sender: Any) {
         // changing lables and shifting right in the array
         if stuIndex <= stuArray.count - 2{
             stuIndex+=1
             print("stuIndex is \(stuIndex)")
-            nameOutlet.text = stuArray[stuIndex].name
-            ageOutlet.text = String(stuArray[stuIndex].age)
-            moneyOutlet.text = String(stuArray[stuIndex].money)
+            nameOutlet.text = "Name: \(stuArray[stuIndex].name)"
+            ageOutlet.text = "Age: \(String(stuArray[stuIndex].age))"
+            moneyOutlet.text = "Money: \(String(stuArray[stuIndex].money))"
         }
         
     }
@@ -52,18 +56,33 @@ class ViewController: UIViewController {
         // changing lables and shifting left in the array
         if stuIndex >= 1{
             stuIndex-=1
-            nameOutlet.text = stuArray[stuIndex].name
-            ageOutlet.text = String(stuArray[stuIndex].age)
-            moneyOutlet.text = String(stuArray[stuIndex].money)
+            nameOutlet.text = "Name: \(stuArray[stuIndex].name)"
+            ageOutlet.text = "Age: \(String(stuArray[stuIndex].age))"
+            moneyOutlet.text = "Money \(String(stuArray[stuIndex].money))"
         }
     }
     
     @IBAction func sortAction(_ sender: Any) {
-        stuArray.sort(by:<)
+        stuArray.sort (by: {$0.name < $1.name})
+        stuIndex = 0
+        nameOutlet.text = "Name: \(stuArray[stuIndex].name)"
+        ageOutlet.text = "Age: \(String(stuArray[stuIndex].age))"
+        moneyOutlet.text = "Money \(String(stuArray[stuIndex].money))"
     }
+    
+    func addStudent(_ stuName: String, _ stuAge: Int, _ stuMoney: Double){
+        stuArray.append(Student(name: stuName, age: stuAge, money: stuMoney))
+    }
+
+    
+   
     
     
 
 
 }
+
+// if segue.indentifer == "segueName" {
+// let nvc = segue.destination as! *viewControllerName*
+//} else then add your additonal segues
 
