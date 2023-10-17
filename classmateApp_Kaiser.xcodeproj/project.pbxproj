@@ -109,10 +109,10 @@
 			children = (
 				3BE35A5E2AD6E4E9005ACA77 /* AppDelegate.swift */,
 				3BE35A602AD6E4E9005ACA77 /* SceneDelegate.swift */,
-				3BE35A622AD6E4E9005ACA77 /* ViewController.swift */,
-				3B827E782AD98B66004B9972 /* addStudentVC.swift */,
 				3BE35A642AD6E4E9005ACA77 /* Main.storyboard */,
 				3B10006A2AD83B9400E52F67 /* HomeScreen.swift */,
+				3BE35A622AD6E4E9005ACA77 /* ViewController.swift */,
+				3B827E782AD98B66004B9972 /* addStudentVC.swift */,
 				3BE35A912AD6E5EA005ACA77 /* Student.swift */,
 				3BE35A6A2AD6E4EA005ACA77 /* Assets.xcassets */,
 				3BE35A6C2AD6E4EA005ACA77 /* LaunchScreen.storyboard */,
