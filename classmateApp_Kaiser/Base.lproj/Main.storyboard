@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -50,7 +51,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s88-zQ-4GK">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s88-zQ-4GK">
                                 <rect key="frame" x="17" y="383" width="347" height="61"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -100,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2794.6564885496182" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="2619" y="-465"/>
         </scene>
         <!--Add StudentVC-->
         <scene sceneID="AaT-0D-216">
@@ -159,22 +160,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Hilarious, HAHA, or meh" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fcs-kl-BH0">
-                                <rect key="frame" x="175" y="384" width="183" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.84312580540000004" green="0.83140003669999996" blue="0.83367359169999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Students Funny:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aN3-D0-SuZ">
-                                <rect key="frame" x="-3" y="380" width="180" height="43"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jYT-No-QDZ">
-                                <rect key="frame" x="143" y="437" width="106" height="68"/>
+                                <rect key="frame" x="143" y="403" width="106" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Add">
@@ -185,6 +172,13 @@
                                     <action selector="addAction:" destination="jkn-fn-igz" eventType="touchUpInside" id="Gl6-VO-NXS"/>
                                 </connections>
                             </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Added Successfully!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0lH-CQ-NTn">
+                                <rect key="frame" x="89" y="489" width="215" height="43"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mhw-OU-Za2"/>
                         <color key="backgroundColor" red="0.76190257677552753" green="1" blue="0.71039027308523761" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -192,9 +186,9 @@
                     <navigationItem key="navigationItem" id="Wq6-9z-DIm"/>
                     <connections>
                         <outlet property="addAgeOutlet" destination="CaP-40-fP5" id="Ymq-xD-jgU"/>
-                        <outlet property="addFunnyOutlet" destination="fcs-kl-BH0" id="8xa-fG-gY3"/>
                         <outlet property="addMoneyOutlet" destination="G7A-Mr-xDX" id="mAD-h8-Z0S"/>
                         <outlet property="addNameOutlet" destination="QW5-vY-znI" id="GmP-yc-SJw"/>
+                        <outlet property="successOutlet" destination="0lH-CQ-NTn" id="r5M-ZP-Y2g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vXo-G9-Fin" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -222,6 +216,8 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="View Mates">
                                     <fontDescription key="titleFontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="32"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.16342618489999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.57337612360000001" green="1" blue="0.66897291309999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="viewMatesAction:" destination="HgP-ib-GGO" eventType="touchUpInside" id="9nR-j1-Cnn"/>
@@ -233,10 +229,25 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="gray" title="Add Mates">
                                     <fontDescription key="titleFontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="32"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.16342618489999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.57337612360000001" green="1" blue="0.66897291309999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="addMatesAction:" destination="HgP-ib-GGO" eventType="touchUpInside" id="eAm-dP-3i4"/>
                                     <action selector="viewMatesAction:" destination="HgP-ib-GGO" eventType="touchUpInside" id="tMh-YV-c68"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYF-9l-jyd">
+                                <rect key="frame" x="119" y="459" width="148" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Table View">
+                                    <fontDescription key="titleFontDescription" name="Rockwell-Italic" family="Rockwell" pointSize="26"/>
+                                    <color key="baseForegroundColor" red="0.0" green="0.16342618489999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="baseBackgroundColor" red="0.57337612360000001" green="1" blue="0.66897291309999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tableViewAction:" destination="HgP-ib-GGO" eventType="touchUpInside" id="wjX-AN-7EU"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -247,11 +258,69 @@
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="toMates" id="huD-98-3dU"/>
                         <segue destination="jkn-fn-igz" kind="show" identifier="toAdd" id="pDJ-NL-2oi"/>
+                        <segue destination="fX7-GM-XCf" kind="show" identifier="toTable" id="SKq-FU-nF7"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yo3-ez-PiU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1835.8778625954199" y="3.5211267605633805"/>
+        </scene>
+        <!--Table ViewVC-->
+        <scene sceneID="L1x-kF-t6e">
+            <objects>
+                <viewController id="fX7-GM-XCf" customClass="TableViewVC" customModule="classmateApp_Kaiser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tiU-Bw-ton">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-ib-JgV">
+                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" textLabel="e68-CS-Z2M" detailTextLabel="Pgg-dh-F0H" rowHeight="52" style="IBUITableViewCellStyleValue1" id="s5M-E8-pgb">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="52"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s5M-E8-pgb" id="aS1-Pt-Hw9">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e68-CS-Z2M">
+                                                    <rect key="frame" x="20" y="19" width="25" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pgg-dh-F0H">
+                                                    <rect key="frame" x="340.33333333333331" y="19" width="32.666666666666664" height="14.333333333333334"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="mx1-cR-WKY"/>
+                        <color key="backgroundColor" red="0.76190257679999995" green="1" blue="0.71039027310000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="c5w-ib-JgV" firstAttribute="top" secondItem="mx1-cR-WKY" secondAttribute="top" id="LB1-xF-G9o"/>
+                            <constraint firstItem="mx1-cR-WKY" firstAttribute="trailing" secondItem="c5w-ib-JgV" secondAttribute="trailing" id="QFv-Sl-AYC"/>
+                            <constraint firstItem="c5w-ib-JgV" firstAttribute="leading" secondItem="mx1-cR-WKY" secondAttribute="leading" id="b8w-Bn-tFA"/>
+                            <constraint firstItem="mx1-cR-WKY" firstAttribute="bottom" secondItem="c5w-ib-JgV" secondAttribute="bottom" id="dDQ-1N-CbJ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="43g-OX-0uh"/>
+                    <connections>
+                        <outlet property="tableViewOutlet" destination="c5w-ib-JgV" id="Gua-8A-qHL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ae4-Bn-OvO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2616.030534351145" y="195.77464788732397"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kOV-EA-8c6">
@@ -272,4 +341,9 @@
             <point key="canvasLocation" x="922.90076335877859" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

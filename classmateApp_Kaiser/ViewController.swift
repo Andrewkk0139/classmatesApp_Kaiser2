@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         nameOutlet.text = "Name: \(delegate.stuArray[0].name)"
         ageOutlet.text = "Age: \(String((delegate.stuArray[0].age)))"
         moneyOutlet.text = "Money: \(String((delegate.stuArray[0].money)))"
-        funnyOutlet.text = "Funny Scale: \(delegate.stuArray[0].funny)"
+       // funnyOutlet.text = "Funny Scale: \(delegate.stuArray[0].funny)"
     }
     @IBAction func nextActioon(_ sender: Any) {
         // changing lables and shifting right in the array

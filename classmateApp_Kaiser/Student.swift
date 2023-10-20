@@ -12,13 +12,11 @@ public class Student{
     var name: String
     var age: Int
     var money: Double
-    var funny: funnyScale
     
-    init(name: String, age: Int, money: Double, funny: funnyScale) {
+    init(name: String, age: Int, money: Double) {
         self.name = name
         self.age = age
         self.money = money
-        self.funny = funny
     }
     
     

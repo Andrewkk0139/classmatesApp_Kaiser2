@@ -12,8 +12,7 @@ class addStudentVC: UIViewController {
     @IBOutlet weak var addNameOutlet: UITextField!
     @IBOutlet weak var addAgeOutlet: UITextField!
     @IBOutlet weak var addMoneyOutlet: UITextField!
-    @IBOutlet weak var addFunnyOutlet: UITextField!
-
+    @IBOutlet weak var successOutlet: UILabel!
     var delegate: HomeScreen!
     
     override func viewDidLoad() {
@@ -27,8 +26,9 @@ class addStudentVC: UIViewController {
         let name1 = addNameOutlet.text ?? "None"
         let age1 = Int(addAgeOutlet.text!) ?? 0
         let money1 = Double(addMoneyOutlet.text!) ?? 0.0
-        let funny1 = funnyScale(addFunnyOutlet.text!) ?? funnyScale.HAHA
-        delegate.stuArray.append(Student(name: name1, age: age1, money: money1, funny: funny1))
+        //let funny1 = funnyScale(addFunnyOutlet.text!) ?? funnyScale.HAHA
+        delegate.stuArray.append(Student(name: name1, age: age1, money: money1))
+        successOutlet.isHidden = false
     }
     
 }
