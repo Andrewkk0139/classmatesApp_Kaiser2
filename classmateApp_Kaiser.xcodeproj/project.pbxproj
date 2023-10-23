@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3B10006B2AD83B9400E52F67 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B10006A2AD83B9400E52F67 /* HomeScreen.swift */; };
 		3B827E792AD98B66004B9972 /* addStudentVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B827E782AD98B66004B9972 /* addStudentVC.swift */; };
+		3BAAEF3E2AE6C66B001940FE /* FancyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BAAEF3D2AE6C66B001940FE /* FancyView.swift */; };
 		3BE132802AE2C38900239029 /* TableViewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE1327F2AE2C38900239029 /* TableViewVC.swift */; };
 		3BE35A5F2AD6E4E9005ACA77 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE35A5E2AD6E4E9005ACA77 /* AppDelegate.swift */; };
 		3BE35A612AD6E4E9005ACA77 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BE35A602AD6E4E9005ACA77 /* SceneDelegate.swift */; };
@@ -43,6 +44,7 @@
 /* Begin PBXFileReference section */
 		3B10006A2AD83B9400E52F67 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		3B827E782AD98B66004B9972 /* addStudentVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addStudentVC.swift; sourceTree = "<group>"; };
+		3BAAEF3D2AE6C66B001940FE /* FancyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FancyView.swift; sourceTree = "<group>"; };
 		3BE1327F2AE2C38900239029 /* TableViewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewVC.swift; sourceTree = "<group>"; };
 		3BE35A5B2AD6E4E9005ACA77 /* classmateApp_Kaiser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = classmateApp_Kaiser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3BE35A5E2AD6E4E9005ACA77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				3BE35A5E2AD6E4E9005ACA77 /* AppDelegate.swift */,
 				3BE35A602AD6E4E9005ACA77 /* SceneDelegate.swift */,
 				3BE35A642AD6E4E9005ACA77 /* Main.storyboard */,
+				3BAAEF3D2AE6C66B001940FE /* FancyView.swift */,
 				3BE1327F2AE2C38900239029 /* TableViewVC.swift */,
 				3B10006A2AD83B9400E52F67 /* HomeScreen.swift */,
 				3BE35A622AD6E4E9005ACA77 /* ViewController.swift */,
@@ -275,6 +278,7 @@
 			files = (
 				3BE132802AE2C38900239029 /* TableViewVC.swift in Sources */,
 				3BE35A692AD6E4E9005ACA77 /* classmateApp_Kaiser.xcdatamodeld in Sources */,
+				3BAAEF3E2AE6C66B001940FE /* FancyView.swift in Sources */,
 				3B827E792AD98B66004B9972 /* addStudentVC.swift in Sources */,
 				3BE35A632AD6E4E9005ACA77 /* ViewController.swift in Sources */,
 				3B10006B2AD83B9400E52F67 /* HomeScreen.swift in Sources */,

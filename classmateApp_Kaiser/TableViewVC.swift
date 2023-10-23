@@ -12,6 +12,7 @@ class TableViewVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
     
     var delegate: HomeScreen!
     @IBOutlet weak var tableViewOutlet: UITableView!
+    var selectedMate: Int!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +22,21 @@ class TableViewVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         tableViewOutlet.dataSource = self
     
     }
+    //button actions
+    @IBAction func addAction(_ sender: Any) {
+        performSegue(withIdentifier: "tableToAdd", sender: self)
+    }
+    
+    @IBAction func deleteAction(_ sender: Any) {
+        delegate.stuArray.remove(at: selectedMate)
+        tableViewOutlet.reloadData()
+    }
+    
+    @IBAction func viewAction(_ sender: Any) {
+        performSegue(withIdentifier: "toFancyView", sender: self)
+    }
+    
+    
     
     // number of cells
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -35,8 +51,18 @@ class TableViewVC: UIViewController, UITableViewDelegate, UITableViewDataSource 
         return cell
     }
     
+    // gives you the indexPath of the selected student. Func runs everytime a cell is selected
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedMate = indexPath.row
+        
+        
+       // print("selected stu: \(selectedMate.name)")
+    }
     
-
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+    }
     
 
 }

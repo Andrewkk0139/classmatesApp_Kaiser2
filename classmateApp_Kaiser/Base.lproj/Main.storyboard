@@ -273,8 +273,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-ib-JgV">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfd-Dd-X4N">
+                                <rect key="frame" x="76" y="91" width="78" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57337612360000001" green="1" blue="0.66897291309999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.0" green="0.16342618489999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Add">
+                                    <fontDescription key="titleFontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="addAction:" destination="fX7-GM-XCf" eventType="touchUpInside" id="trE-QJ-OpY"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="c5w-ib-JgV">
+                                <rect key="frame" x="0.0" y="153" width="393" height="665"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" textLabel="e68-CS-Z2M" detailTextLabel="Pgg-dh-F0H" rowHeight="52" style="IBUITableViewCellStyleValue1" id="s5M-E8-pgb">
@@ -303,24 +317,92 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0ui-6v-tI3">
+                                <rect key="frame" x="165" y="91" width="90" height="39"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57337612360000001" green="1" blue="0.66897291309999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.0" green="0.16342618489999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="View">
+                                    <fontDescription key="titleFontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="viewAction:" destination="fX7-GM-XCf" eventType="touchUpInside" id="CiA-ei-F9F"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fDK-rX-FKE">
+                                <rect key="frame" x="268" y="89" width="109" height="41"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.57337612360000001" green="1" blue="0.66897291309999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" red="0.0" green="0.16342618489999999" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Delete">
+                                    <fontDescription key="titleFontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deleteAction:" destination="fX7-GM-XCf" eventType="touchUpInside" id="mBB-N9-kKJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mx1-cR-WKY"/>
                         <color key="backgroundColor" red="0.76190257679999995" green="1" blue="0.71039027310000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <constraints>
-                            <constraint firstItem="c5w-ib-JgV" firstAttribute="top" secondItem="mx1-cR-WKY" secondAttribute="top" id="LB1-xF-G9o"/>
-                            <constraint firstItem="mx1-cR-WKY" firstAttribute="trailing" secondItem="c5w-ib-JgV" secondAttribute="trailing" id="QFv-Sl-AYC"/>
-                            <constraint firstItem="c5w-ib-JgV" firstAttribute="leading" secondItem="mx1-cR-WKY" secondAttribute="leading" id="b8w-Bn-tFA"/>
-                            <constraint firstItem="mx1-cR-WKY" firstAttribute="bottom" secondItem="c5w-ib-JgV" secondAttribute="bottom" id="dDQ-1N-CbJ"/>
-                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="43g-OX-0uh"/>
                     <connections>
                         <outlet property="tableViewOutlet" destination="c5w-ib-JgV" id="Gua-8A-qHL"/>
+                        <segue destination="jkn-fn-igz" kind="show" identifier="tableToAdd" id="QIO-AG-5SP"/>
+                        <segue destination="sX4-qt-Dml" kind="show" identifier="toFancyView" id="ApD-aF-FAr"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ae4-Bn-OvO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2616.030534351145" y="195.77464788732397"/>
+        </scene>
+        <!--Fancy View-->
+        <scene sceneID="xp0-9E-9fG">
+            <objects>
+                <viewController id="sX4-qt-Dml" customClass="FancyView" customModule="classmateApp_Kaiser" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HTc-gK-l8p">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Detailed Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mP2-3w-vtj">
+                                <rect key="frame" x="40" y="103" width="313" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goV-25-wuY">
+                                <rect key="frame" x="40" y="203" width="313" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zcy-Oc-E0b">
+                                <rect key="frame" x="40" y="266" width="313" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Money:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ni-fQ-NGz">
+                                <rect key="frame" x="40" y="329" width="313" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="eBO-8p-9dD"/>
+                        <color key="backgroundColor" red="0.76190257679999995" green="1" blue="0.71039027310000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rFB-zH-vBd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oBt-qS-xnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3374.8091603053435" y="195.77464788732397"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="kOV-EA-8c6">
@@ -341,6 +423,9 @@
             <point key="canvasLocation" x="922.90076335877859" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="QIO-AG-5SP"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
