@@ -23,8 +23,6 @@ class HomeScreen: UIViewController {
         stuArray.append(s3)
     }
     
-    
-    
     @IBAction func viewMatesAction(_ sender: Any) {
         performSegue(withIdentifier: "toMates", sender: self)
     }

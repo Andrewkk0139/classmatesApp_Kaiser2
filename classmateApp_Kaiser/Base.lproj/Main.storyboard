@@ -234,7 +234,6 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <action selector="addMatesAction:" destination="HgP-ib-GGO" eventType="touchUpInside" id="eAm-dP-3i4"/>
-                                    <action selector="viewMatesAction:" destination="HgP-ib-GGO" eventType="touchUpInside" id="tMh-YV-c68"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zYF-9l-jyd">
@@ -291,21 +290,21 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" textLabel="e68-CS-Z2M" detailTextLabel="Pgg-dh-F0H" rowHeight="52" style="IBUITableViewCellStyleValue1" id="s5M-E8-pgb">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="myCell" textLabel="Ehh-r3-50m" detailTextLabel="E5G-gg-uXB" rowHeight="52" style="IBUITableViewCellStyleValue1" id="s5M-E8-pgb" customClass="CrazyCell" customModule="classmateApp_Kaiser" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="52"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s5M-E8-pgb" id="aS1-Pt-Hw9">
                                             <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="e68-CS-Z2M">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Ehh-r3-50m">
                                                     <rect key="frame" x="20" y="19" width="25" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Pgg-dh-F0H">
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Detail" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="E5G-gg-uXB">
                                                     <rect key="frame" x="340.33333333333331" y="19" width="32.666666666666664" height="14.333333333333334"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
@@ -350,6 +349,7 @@
                     <navigationItem key="navigationItem" id="43g-OX-0uh"/>
                     <connections>
                         <outlet property="tableViewOutlet" destination="c5w-ib-JgV" id="Gua-8A-qHL"/>
+                        <outlet property="viewButtonOutlet" destination="0ui-6v-tI3" id="wsp-Ac-8ui"/>
                         <segue destination="jkn-fn-igz" kind="show" identifier="tableToAdd" id="QIO-AG-5SP"/>
                         <segue destination="sX4-qt-Dml" kind="show" identifier="toFancyView" id="ApD-aF-FAr"/>
                     </connections>
@@ -399,6 +399,11 @@
                         <color key="backgroundColor" red="0.76190257679999995" green="1" blue="0.71039027310000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
                     <navigationItem key="navigationItem" id="rFB-zH-vBd"/>
+                    <connections>
+                        <outlet property="ageOutlet" destination="zcy-Oc-E0b" id="Tbn-VI-mNt"/>
+                        <outlet property="moneyOutlet" destination="9Ni-fQ-NGz" id="xPI-w1-9Xb"/>
+                        <outlet property="nameOutlet" destination="goV-25-wuY" id="bjK-bb-Lq8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oBt-qS-xnU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
